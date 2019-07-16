@@ -14,6 +14,63 @@ module.exports = function(app) {
 
     //below: keep for html home page path
     res.sendFile(path.join(__dirname, "../public/html/home.html"));
+
+  });
+
+  //view status page
+  app.get("/status", function(req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    // });
+
+    //below: keep for html home page path
+    res.sendFile(path.join(__dirname, "../public/html/status.html"));
+
+  });
+
+  //view services page
+  app.get("/services", function(req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    // });
+
+    //below: keep for html home page path
+    res.sendFile(path.join(__dirname, "../public/html/services.html"));
+
+  });
+
+  //view about  page
+  app.get("/about", function(req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    // });
+
+    //below: keep for html home page path
+    res.sendFile(path.join(__dirname, "../public/html/about.html"));
+
+  });
+
+  //view bokoing page
+  app.get("/book", function(req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    // });
+
+    //below: keep for html home page path
+    res.sendFile(path.join(__dirname, "../public/html/book.html"));
+
   });
 
   // Load example page and pass in an example by id
