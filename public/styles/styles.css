@@ -3,8 +3,7 @@
 }
 
 .nav-extended {
-  background-color: purple;
-  color: black;
+  background-color: rgb(207, 148, 248);
 }
 
 .nav-content{ 
@@ -13,4 +12,8 @@
 
 .a.brand-logo{
   color: black;
+}
+
+.bookhere{
+  font-weight: 400;
 }
