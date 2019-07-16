@@ -1,19 +1,19 @@
-.list-group-item {
-  line-height: 2.5;
-}
+/* .list-group-item { */
+  /* line-height: 2.5; */
+/* } */
 
 .nav-extended {
   background-color: rgb(207, 148, 248);
 }
 
-.nav-content{ 
-  color: black;
+
+.page-footer{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 200px;
 }
 
-.a.brand-logo{
-  color: black;
-}
 
-.bookhere{
-  font-weight: 400;
+body{
+  background-color: rgb(97, 85, 85);
 }
