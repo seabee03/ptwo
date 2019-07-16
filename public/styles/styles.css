@@ -1,3 +1,16 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+.nav-extended {
+  background-color: purple;
+  color: black;
+}
+
+.nav-content{ 
+  color: black;
+}
+
+.a.brand-logo{
+  color: black;
+}
