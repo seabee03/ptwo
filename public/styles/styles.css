@@ -15,20 +15,36 @@
 
 
 body{
-  background-color: rgb(97, 85, 85);
+  background-color: rgb(146, 143, 143);
 }
 
 .booking{
  
-  background-color: black;
+  background-color: rgb(52, 52, 182);
   margin-right: 30px;
   margin-top: 40px;
+  border-radius: 5mm;
 }
 
 .brand-logo{
-  background-color: darkmagenta;
+  
   margin-left: 20px;
   margin-top: 15px;
   padding: 10px;
   
+}
+
+.tabone{
+  background-color: white;
+
+}
+
+.page-footer{
+  background-color: rgb(207, 148, 248);
+}
+
+h3{
+  color:white;
+  background-color: rgba(52, 52, 182,.6);
+  width: 30%;
 }
