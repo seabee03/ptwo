@@ -11,12 +11,10 @@
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
             
-    <title>Doggie Spaw - Status</title>
+    <title>Doggie Spaw - Home</title>
 </head>
 
-status page
 
 <body>
 
@@ -25,23 +23,21 @@ status page
 <nav class="nav-extended">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Doggie Spaw</a>
-          <!---<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">1-800-DOG-SPAW</a></li>
-            <li><a href="badges.html"></a></li>
-            <li class="bookhere"><a href="collapsible.html">BOOK HERE!</a></li>
+            <!--<li>1-800-DOG-SPAW</a></li>-->
+            <li class="booking" ><a href="book.html">BOOK HERE!</a></li>
           </ul>
         </div>
         <div class="nav-content">
           <ul class="tabs tabs-transparent">
-            <li class="tab"><a href="#test1">Home</a></li>
-            <li class="tab"><a class="active" href="#test2">About Us</a></li>
-            <li class="tab"><a href="#test4">Services</a></li>
-            <li class="tab"><a href="#test4">Apointment Request Status</a></li>
+            <li class="tab"><a href="home.html">Home</a></li>
+            <li class="tab"><a class="active" href="about.html">About Us</a></li>
+            <li class="tab"><a href="services.html">Services</a></li>
+            <li class="tab"><a href="status.html">Apointment Request Status</a></li>
+            <li class="tab"><a href="book.html">1-800-DOG-SPAW</a></li>
           </ul>
         </div>
 </nav>
-    
 
 
 
@@ -52,7 +48,7 @@ status page
 
 <!--login box goes here-->
 
-<div class="row">
+<!--<div class="row">
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
@@ -84,7 +80,31 @@ status page
           </div>
           
     
-      </div>
+      </div>-->
+
+      <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <h2>Login To View Appointment Request Status</h2>
+                <form class="login">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="password-input" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-default">Login</button>
+                </form>
+                <br />
+                <!--<p>Or sign up <a href="/">here</a></p>-->
+              </div>
+            </div>
+          </div>
+         
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script type="text/javascript" src="js/login.js"></script>
 
 
 
