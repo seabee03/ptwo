@@ -17,3 +17,18 @@
 body{
   background-color: rgb(97, 85, 85);
 }
+
+.booking{
+ 
+  background-color: black;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+.brand-logo{
+  background-color: darkmagenta;
+  margin-left: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  
+}
