@@ -1,6 +1,6 @@
 -- Drops the dogspawdb if it exists currently --
 DROP DATABASE IF EXISTS dogspawdb;
--- Creates the "dogspawdb" database --
+
 CREATE DATABASE dogspawdb;
 
 -- Makes it so all of the following code will affect dogspawdb --
