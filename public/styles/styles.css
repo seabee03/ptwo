@@ -3,7 +3,8 @@
 /* } */
 
 .nav-extended {
-  background-color: rgb(207, 148, 248);
+  background-color: rgb(207, 148, 248); 
+ 
 }
 
 
@@ -21,17 +22,9 @@ body{
 .booking{
  
   background-color: rgb(52, 52, 182);
-  margin-right: 30px;
-  margin-top: 40px;
+  margin-right: 100px;
+  margin-top: 60px;
   border-radius: 5mm;
-}
-
-.brand-logo{
-  
-  margin-left: 20px;
-  margin-top: 15px;
-  padding: 10px;
-  
 }
 
 .tabone{
@@ -48,4 +41,13 @@ h3{
   background-color: rgba(52, 52, 182,.6);
   width: 30%;
   font-size: 30px;
+}
+
+.logo{
+
+  z-index: 1;
+  margin-left: 20px;
+  margin-bottom: -30px;
+  margin-top: -30px;
+  margin-left: -50px;
 }
