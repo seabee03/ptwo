@@ -1,11 +1,11 @@
 -- Drops the dogspawdb if it exists currently --
-DROP DATABASE IF EXISTS dogspawdb;
+DROP DATABASE IF EXISTS o4uecp5rn6ya68qw;
 
 -- Creates the "dogspawdb" database --
-CREATE DATABASE dogspawdb;
+CREATE DATABASE o4uecp5rn6ya68qw;
 
 -- Makes it so all of the following code will affect dogspawdb --
-USE dogspawdb;
+USE o4uecp5rn6ya68qw;
 
 -- Creates the table "appt_request" within dogspawdb --
 CREATE TABLE appt_request (
