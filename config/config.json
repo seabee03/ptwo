@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "id61cjfz5m09ccf8",
-    "password": "r8k6fovquddn4gwm",
-    "database": "o4uecp5rn6ya68qw",
-    "host": "cig4l2op6r0fxymw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "Navygirl07!",
+    "database": "dogspawdb",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
