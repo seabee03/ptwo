@@ -59,7 +59,7 @@ module.exports = function(app) {
 
   });
 
-  //view bokoing page
+  //view booking page
   app.get("/book", function(req, res) {
     // db.Example.findAll({}).then(function(dbExamples) {
     //   res.render("index", {
