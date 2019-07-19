@@ -1,9 +1,10 @@
 // Get references to page elements
-var $appointmentPetName = $("#pet_name");
-var $appointmentPetBreed = $("#pet_breed");
-var $appointmentPetAge = $("#pet_age");
-var $appointmentPetWeight = $("#pet_weight");
-var $appointmentRabiesVaccination = $("#rabies_vaccination");
+var $appointmentYourName = $("#inputEmail4")
+var $appointmentPetName = $("#inputEmal5");
+var $appointmentPetBreed = $("#inputAddress");
+var $appointmentPetAge = $("#inputAddress2");
+var $appointmentPetWeight = $("#inputCity");
+var $appointmentRabiesVaccination = $("#inputZip");
 // var $appointment14StepSpaw = $("#14_step_spaw");
 // var $appointmentDeShedding= $("#de_shedding");
 // var $appointmentPadTreatment= $("#apad_treatment");
