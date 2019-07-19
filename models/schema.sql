@@ -12,6 +12,7 @@ CREATE TABLE appt_request (
 
 -- Creates columns in table below --
   id INTEGER NOT NULL AUTO_INCREMENT,
+  your_name VARCHAR (100) NOT NULL,
   pet_name VARCHAR(100) NOT NULL,
   pet_breed VARCHAR(100) NOT NULL,
   pet_age INTEGER(2) NOT NULL,
@@ -19,17 +20,17 @@ CREATE TABLE appt_request (
   rabies_vaccination BOOLEAN DEFAULT false,
   
   -- Services that can be chosen --
-  14_step_spaw BOOLEAN DEFAULT false,
+  --14_step_spaw BOOLEAN DEFAULT false,
   
   -- Additional Services that can be added onto the 14 step spaw service --
-  de_shedding BOOLEAN DEFAULT false,
-  pad_treatment BOOLEAN DEFAULT false,
-  shave_down BOOLEAN DEFAULT false,
-  clips BOOLEAN DEFAULT false,
-  flee_tick BOOLEAN DEFAULT false,
-  teeth_brush BOOLEAN DEFAULT false,
-  pawdicure BOOLEAN DEFAULT false,
-  hair_color BOOLEAN DEFAULT false,
+  -- de_shedding BOOLEAN DEFAULT false,
+  -- pad_treatment BOOLEAN DEFAULT false,
+  -- shave_down BOOLEAN DEFAULT false,
+  -- clips BOOLEAN DEFAULT false,
+  -- flee_tick BOOLEAN DEFAULT false,
+  -- teeth_brush BOOLEAN DEFAULT false,
+  -- pawdicure BOOLEAN DEFAULT false,
+  -- hair_color BOOLEAN DEFAULT false,
   PRIMARY KEY(id)
 );
 
