@@ -30,6 +30,18 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/html/status.html"));
 
   });
+  app.get("/post", function(req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    // });
+
+    //below: keep for html home page path
+    res.sendFile(path.join(__dirname, "../public/html/post.html"));
+
+  });
 
   //view services page
   app.get("/services", function(req, res) {
