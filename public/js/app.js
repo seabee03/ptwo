@@ -108,8 +108,10 @@ var handleFormSubmit = function(event) {
     return;
   }
 
-  API.saveAppointment(appointment).then(function() {
-    refreshAppointments();
+  API.saveAppointment(appointment).then(function(data) {
+    console.log(data);
+    window.location = "/post/"+data.id 
+    // refreshAppointments();
   });
     $appointmentYourName.val("");
     $appointmentPetName.val("");
