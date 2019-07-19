@@ -1,4 +1,7 @@
 # Project 2 - Doggy Spaw <br>
+
+#### What is Doggy Spaw?
+
 #### NPM Install <br>
 The necessary NPM installs needed are listed below.<br>
     1. `NPM install express`<br>
