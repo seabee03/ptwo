@@ -1,18 +1,18 @@
 // Get references to page elements
-var $appointmentPetName = $("#appointment-pet_name");
-var $appointmentPetBreed = $("#appointment-pet_breed");
-var $appointmentPetAge = $("#appointment-pet_age");
-var $appointmentPetWeight = $("#appointment-pet_weight");
-var $appointmentRabiesVaccination = $("#appointment-rabies_vaccination");
-// var $appointment14StepSpaw = $("#appointment-14_step_spaw");
-// var $appointmentDeShedding= $("#appointment-de_shedding");
-// var $appointmentPadTreatment= $("#appointment-pad_treatment");
-// var $appointmentShaveDown= $("#appointment-shave_down");
-// var $appointmentClips= $("#appointment-clips");
-// var $appointmentFleeTick= $("#appointment-flee_tick");
-// var $appointmentTeethBrush= $("#appointment-teeth_brush");
-// var $appointmentPawdicure= $("#appointment-pawdicure");
-// var $appointmentHairColor= $("#appointment-hair_color");
+var $appointmentPetName = $("#pet_name");
+var $appointmentPetBreed = $("#pet_breed");
+var $appointmentPetAge = $("#pet_age");
+var $appointmentPetWeight = $("#pet_weight");
+var $appointmentRabiesVaccination = $("#rabies_vaccination");
+// var $appointment14StepSpaw = $("#14_step_spaw");
+// var $appointmentDeShedding= $("#de_shedding");
+// var $appointmentPadTreatment= $("#apad_treatment");
+// var $appointmentShaveDown= $("#shave_down");
+// var $appointmentClips= $("#clips");
+// var $appointmentFleeTick= $("#flee_tick");
+// var $appointmentTeethBrush= $("#teeth_brush");
+// var $appointmentPawdicure= $("#pawdicure");
+// var $appointmentHairColor= $("#hair_color");
 // var $submitBtn = $("#submit");
 // var $appointmentList = $("#appointment-list");
 
