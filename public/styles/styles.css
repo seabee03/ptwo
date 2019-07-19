@@ -62,3 +62,15 @@ h3{
   margin-top: -30px;
   margin-left: -50px;
 }
+
+.found{
+  background-color: white;
+  text-align: center;
+  width: 40%;
+  margin-left: 60px;
+  
+}
+
+.card-title{
+  background-color: black;
+}
