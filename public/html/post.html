@@ -44,8 +44,7 @@
         </div>
 </nav>
     
-
-
+<div id="receipt"></div>
 
 
 
@@ -57,21 +56,6 @@
 
 <!--pet info etc goes here-->
 
-<div>
-    <h1>
-        post info here!
-
-      
-    </h1>
-
-    <h2>
-            something like "Hey Alex, thanks for your request!
-        
-            Request Details"
-            
-            Pet name; ____ etc"
-    </h2>
-</div>
 
 
 
@@ -113,6 +97,22 @@
         var id = window.location.pathname.split("/").pop();
         $.get("/api/appointments/"+id).then(function(data){
             console.log(data);
+            
+            var userNameTag = $("<p>");
+            userNameTag.text(data[0].your_name);
+            userNameTag.addClass("info user-name");
+            $("#receipt").append(userNameTag);
+
+            var petNameTag = $("<p>");
+            petNameTag.text(data[0].pet_name);
+            petNameTag.addClass("info pet-name");
+            $("#receipt").append(petNameTag);
+
+            var userNameTag = $("<p>");
+            userNameTag.text(data[0].your_name);
+            userNameTag.addClass("info user-name");
+            $("#receipt").append(userNameTag);
+
         })
       </script>
     
