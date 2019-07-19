@@ -30,7 +30,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/html/status.html"));
 
   });
-  app.get("/post", function(req, res) {
+  app.get("/post/:id", function(req, res) {
     // db.Example.findAll({}).then(function(dbExamples) {
     //   res.render("index", {
     //     msg: "Welcome!",

@@ -7,12 +7,15 @@
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <title>Doggie Spaw - Post</title>
 </head>
 
@@ -24,7 +27,7 @@
 <nav class="nav-extended">
         <div class="nav-wrapper">
           <!--<a href="#" class="brand-logo">Doggie Spaw</a>-->
-          <img src="./images/doglogo.png" class="logo">
+          <img src="/images/doglogo.png" class="logo">
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <!--<li>1-800-DOG-SPAW</a></li>-->
             <li class="booking" ><a href="/book">BOOK HERE!</a></li>
@@ -41,8 +44,6 @@
         </div>
 </nav>
     
-
-
 
 
 
@@ -108,6 +109,11 @@
     
         
         });
+
+        var id = window.location.pathname.split("/").pop();
+        $.get("/api/appointments/"+id).then(function(data){
+            console.log(data);
+        })
       </script>
     
 
