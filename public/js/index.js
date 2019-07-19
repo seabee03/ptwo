@@ -1,47 +1,59 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
+var $appointmentPetName = $("#appointment-pet_name");
+var $appointmentPetBreed = $("#appointment-pet_breed");
+var $appointmentPetAge = $("#appointment-pet_age");
+var $appointmentPetWeight = $("#appointment-pet_weight");
+var $appointmentRabiesVaccination = $("#appointment-rabies_vaccination");
+var $appointment14StepSpaw = $("#appointment-14_step_spaw");
+var $appointmentDeShedding= $("#appointment-de_shedding");
+var $appointmentPadTreatment= $("#appointment-pad_treatment");
+var $appointmentShaveDown= $("#appointment-shave_down");
+var $appointmentClips= $("#appointment-clips");
+var $appointmentFleeTick= $("#appointment-flee_tick");
+var $appointmentTeethBrush= $("#appointment-teeth_brush");
+var $appointmentPawdicure= $("#appointment-pawdicure");
+var $appointmentHairColor= $("#appointment-hair_color");
 var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+var $appointmentList = $("#appointment-list");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  saveAppointment: function(appointment) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
-      data: JSON.stringify(example)
+      url: "api/appointments",
+      data: JSON.stringify(appointment)
     });
   },
-  getExamples: function() {
+  getAppointments: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/appointments",
       type: "GET"
     });
   },
-  deleteExample: function(id) {
+  deleteAppointment: function(id) {
     return $.ajax({
-      url: "api/examples/" + id,
+      url: "api/appointments/" + id,
       type: "DELETE"
     });
   }
 };
 
-// refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
+// refreshAppointments gets new appointments from the db and repopulates the list
+var refreshAppointments = function() {
+  API.getAppointments().then(function(data) {
+    var $appointments = data.map(function(appointment) {
       var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+        .text(appointment.text)
+        .attr("href", "/appointment/" + appointment.id);
 
       var $li = $("<li>")
         .attr({
           class: "list-group-item",
-          "data-id": example.id
+          "data-id": appointment.id
         })
         .append($a);
 
@@ -54,46 +66,73 @@ var refreshExamples = function() {
       return $li;
     });
 
-    $exampleList.empty();
-    $exampleList.append($examples);
+    $appointmentList.empty();
+    $appointmentList.append($appointments);
   });
 };
 
-// handleFormSubmit is called whenever we submit a new example
-// Save the new example to the db and refresh the list
+// handleFormSubmit is called whenever we submit a new appointment
+// Save the new appointment to the db and refresh the list
 var handleFormSubmit = function(event) {
   event.preventDefault();
 
-  var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+  var appointment = {
+    // Get references to page elements
+    pet name: $appointmentPetName.val().trim(),
+    pet breed: $appointmentPetBreed.val().trim(),
+    pet age: $appointmentPetAge.val().trim(),
+    pet weight: $appointmentPetWeight.val().trim(),
+    rabies vaccination: $appointmentRabiesVaccination.val().trim(),
+    14 step spaw: $appointment14StepSpaw.val().trim(),
+    desheeding: $appointmentDeShedding.val().trim(),
+    pad treatment: $appointmentPadTreatment.val().trim(),
+    shave down: $appointmentShaveDown.val().trim(),
+    clips: $appointmentClips.val().trim(),
+    flee and tick: $appointmentFleeTick.val().trim(),
+    teeth brushing: $appointmentTeethBrush.val().trim(),
+    pawdicure: $appointmentPawdicure.val().trim(),
+    hair color: $appointmentHairColor.val().trim()
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  if (!(appointment.petname && appointment.petbreed)) {
+    alert("You must enter details about your pet.");
     return;
   }
 
-  API.saveExample(example).then(function() {
-    refreshExamples();
+  API.saveAppointment(appointment).then(function() {
+    refreshAppointments();
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
+  $appointmentText.val("");
+  $appointmentDescription.val("");
+  $appointmentPetName.val("");
+  $appointmentPetBreed.val("");
+  $appointmentPetAge.val("");
+  $appointmentPetWeight.val("");
+  $appointmentRabiesVaccination.val("");
+  $appointment14StepSpaw.val("");
+  $appointmentDeShedding.val("");
+  $appointmentPadTreatment.val("");
+  $appointmentShaveDown.val("");
+  $appointmentClips.val("");
+  $appointmentFleeTick.val("");
+  $appointmentTeethBrush.val("");
+  $appointmentPawdicure.val("");
+  $appointmentHairColor.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
-// Remove the example from the db and refresh the list
+// Remove the appointment from the db and refresh the list
 var handleDeleteBtnClick = function() {
   var idToDelete = $(this)
     .parent()
     .attr("data-id");
 
-  API.deleteExample(idToDelete).then(function() {
-    refreshExamples();
+  API.deleteAppointment(idToDelete).then(function() {
+    refreshAppointments();
   });
 };
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+$appointmentList.on("click", ".delete", handleDeleteBtnClick);
