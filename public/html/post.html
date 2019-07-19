@@ -108,11 +108,22 @@
             petNameTag.addClass("info pet-name");
             $("#receipt").append(petNameTag);
 
-            var userNameTag = $("<p>");
-            userNameTag.text(data[0].your_name);
-            userNameTag.addClass("info user-name");
-            $("#receipt").append(userNameTag);
+            var petBreedTag = $("<p>");
+            petBreedTag.text(data[0].pet_breed);
+            petBreedTag.addClass("info pet_breed");
+            $("#receipt").append(petBreedTag);
 
+            var petageTag = $("<p>");
+            petageTag.text(data[0].pet_age);
+            petageTag.addClass("info pet_age");
+            $("#receipt").append(petageTag);
+
+            var petweightTag = $("<p>");
+            petweightTag.text(data[0].pet_weight);
+            petweightTag.addClass("info pet_weight");
+            $("#receipt").append(petweightTag);
+
+            
         })
       </script>
     
