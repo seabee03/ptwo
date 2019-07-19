@@ -1,10 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
   var Appointment = sequelize.define("Appointment", {
-    petname: DataTypes.TEXT,
-    petbreed: DataTypes.TEXT,
-    petage: DataTypes.TEXT,
-    petweight: DataTypes.TEXT,
-    rabiesvaccination: DataTypes.TEXT,
+    your_name: DataTypes.TEXT,
+    pet_name: DataTypes.TEXT,
+    pet_breed: DataTypes.TEXT,
+    pet_age: DataTypes.TEXT,
+    pet_weight: DataTypes.TEXT,
+    rabies_vaccination: DataTypes.TEXT,
     // 14stepspaw: DataTypes.TEXT,
     // desheeding: DataTypes.TEXT,
     // padtreatment: DataTypes.TEXT,

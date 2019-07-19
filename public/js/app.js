@@ -1,6 +1,6 @@
 // Get references to page elements
 var $appointmentYourName = $("#inputEmail4")
-var $appointmentPetName = $("#inputEmal5");
+var $appointmentPetName = $("#inputEmail5");
 var $appointmentPetBreed = $("#inputAddress");
 var $appointmentPetAge = $("#inputAddress2");
 var $appointmentPetWeight = $("#inputCity");
@@ -14,7 +14,7 @@ var $appointmentRabiesVaccination = $("#inputZip");
 // var $appointmentTeethBrush= $("#teeth_brush");
 // var $appointmentPawdicure= $("#pawdicure");
 // var $appointmentHairColor= $("#hair_color");
-// var $submitBtn = $("#submit");
+var $submitBtn = $("#submit");
 // var $appointmentList = $("#appointment-list");
 
 // The API object contains methods for each kind of request we'll make
@@ -25,7 +25,7 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/appointments",
+      url: "/api/appointments",
       data: JSON.stringify(appointment)
     });
   },
@@ -79,11 +79,12 @@ var handleFormSubmit = function(event) {
 
   var appointment = {
     // Get references to page elements
-    petname: $appointmentPetName.val().trim(),
-    petbreed: $appointmentPetBreed.val().trim(),
-    petage: $appointmentPetAge.val().trim(),
-    petweight: $appointmentPetWeight.val().trim(),
-    rabiesvaccination: $appointmentRabiesVaccination.val().trim(),
+    your_name: $appointmentYourName.val().trim(),
+    pet_name: $appointmentPetName.val().trim(),
+    pet_breed: $appointmentPetBreed.val().trim(),
+    pet_age: $appointmentPetAge.val().trim(),
+    pet_weight: $appointmentPetWeight.val().trim(),
+    rabies_vaccination: $appointmentRabiesVaccination.val().trim(),
     // 14stepspaw: $appointment14StepSpaw.val().trim(),
     // desheeding: $appointmentDeShedding.val().trim(),
     // padtreatment: $appointmentPadTreatment.val().trim(),
@@ -95,14 +96,22 @@ var handleFormSubmit = function(event) {
     // haircolor: $appointmentHairColor.val().trim()
   };
 
-  if (!(appointment.petname && appointment.petbreed)) {
+  console.log(appointment);
+
+  if (!(appointment.pet_name && appointment.pet_breed)) {
     alert("You must enter details about your pet.");
+    return;
+  }
+  
+  if (!(appointment.pet_age && appointment.pet_weight)) {
+    alert("You must enter a number.");
     return;
   }
 
   API.saveAppointment(appointment).then(function() {
     refreshAppointments();
   });
+    $appointmentYourName.val("");
     $appointmentPetName.val("");
     $appointmentPetBreed.val("");
     $appointmentPetAge.val("");
@@ -133,4 +142,4 @@ var handleDeleteBtnClick = function() {
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
-$appointmentList.on("click", ".delete", handleDeleteBtnClick);
+// $appointmentList.on("click", ".delete", handleDeleteBtnClick);

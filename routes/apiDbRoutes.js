@@ -3,6 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Get all appointments
   app.get("/api/appointments", function(req, res) {
+    
     db.Appointment.findAll({}).then(function(dbAppointments) {
       res.json(dbAppointments);
     });
@@ -10,6 +11,7 @@ module.exports = function(app) {
 
   // Create a new appointment
   app.post("/api/appointments", function(req, res) {
+    console.log("am i running")
     db.Appointment.create(req.body).then(function(dbAppointment) {
       res.json(dbAppointment);
     });
