@@ -26,4 +26,9 @@ The necessary NPM installs needed are listed below.<br>
     * GitHub: [@ryley20](https://github.com/ryley20)<br>
 * D.J. Prado<br>
     * GitHub: [@seabee03](https://github.com/seabee03)<br>
+#### Screenshots<br>
+![Home Page](https://i.imgur.com/42EAMTF.png)<br>
+![Booking Page](https://i.imgur.com/awclGg0.png)<br>
+![Log in page](https://i.imgur.com/S8FJBaF.png)<br>
+
 
