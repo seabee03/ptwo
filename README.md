@@ -13,17 +13,17 @@ The necessary NPM installs needed are listed below.<br>
     7. `NPM install mysql2`<br>
     8. `NPM install bcryptjs`<br>
 * Make sure you have your password and the correct database name in the file `config.json`<br>
-#### Future features
-* ability to auto-reject those that don't have up to date vaccinations.
-* Log-in authentication for users
-* The option for users to pick services for the appointment
-* Adding a calendar interface to choose day and a time for the grooming appointment
-* saving pet information for future/repeated appointments
-#### Contributors
-* Amanda Lowell
-    * GitHub: [@amandalowell](https://github.com/amandalowell)
-* Ryley Chapman
-    * GitHub: [@ryley20](https://github.com/ryley20)
-* D.J. Prado
-    * GitHub: [@seabee03](https://github.com/seabee03)
+#### Future features<br>
+* ability to auto-reject those that don't have up to date vaccinations.<br>
+* Log-in authentication for users<br>
+* The option for users to pick services for the appointment<br>
+* Adding a calendar interface to choose day and a time for the grooming appointment<br>
+* saving pet information for future/repeated appointments<br>
+#### Contributors<br>
+* Amanda Lowell<br>
+    * GitHub: [@amandalowell](https://github.com/amandalowell)<br>
+* Ryley Chapman<br>
+    * GitHub: [@ryley20](https://github.com/ryley20)<br>
+* D.J. Prado<br>
+    * GitHub: [@seabee03](https://github.com/seabee03)<br>
 
